@@ -242,13 +242,13 @@ g.add_legend()
 
 
 
-    <seaborn.axisgrid.PairGrid at 0x2c1e5cf0760>
+    <seaborn.axisgrid.PairGrid at 0x29023498a30>
 
 
 
 
     
-![png](README.ipynb_files/README.ipynb_8_1.png)
+![png](output_8_1.png)
     
 
 
@@ -270,7 +270,7 @@ sns.heatmap(corr, cmap="Blues", robust=True, annot = True)
 
 
     
-![png](README.ipynb_files/README.ipynb_10_1.png)
+![png](output_10_1.png)
     
 
 
@@ -305,7 +305,7 @@ sns.boxplot(y=data["charges"], ax=ax[1])
 
 
     
-![png](README.ipynb_files/README.ipynb_13_1.png)
+![png](output_13_1.png)
     
 
 
@@ -320,13 +320,13 @@ sns.catplot(x="children", y="charges", kind="box", data=data)
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x2c1e4c95f10>
+    <seaborn.axisgrid.FacetGrid at 0x2902401a8e0>
 
 
 
 
     
-![png](README.ipynb_files/README.ipynb_15_1.png)
+![png](output_15_1.png)
     
 
 
@@ -344,13 +344,13 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x2c1e7295d30>
+    <matplotlib.legend.Legend at 0x2902439d430>
 
 
 
 
     
-![png](README.ipynb_files/README.ipynb_17_1.png)
+![png](output_17_1.png)
     
 
 
@@ -382,7 +382,7 @@ sns.scatterplot(x="age", y="charges", hue="smoker",  data=data, palette=["C3", "
 
 
     
-![png](README.ipynb_files/README.ipynb_19_1.png)
+![png](output_19_1.png)
     
 
 
@@ -403,13 +403,13 @@ sns.catplot(x="smoker", y="charges", kind="box", hue="sex",  data=data, palette=
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x2c1e73bcca0>
+    <seaborn.axisgrid.FacetGrid at 0x29023b44820>
 
 
 
 
     
-![png](README.ipynb_files/README.ipynb_22_1.png)
+![png](output_22_1.png)
     
 
 
@@ -424,13 +424,13 @@ sns.catplot(x="region", y="charges", kind="box", hue="smoker", data=data, palett
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x2c1e73ab8e0>
+    <seaborn.axisgrid.FacetGrid at 0x2902451f850>
 
 
 
 
     
-![png](README.ipynb_files/README.ipynb_24_1.png)
+![png](output_24_1.png)
     
 
 
@@ -461,7 +461,7 @@ print("{} of {} ({:.2f}%) women smoke.".format(female_smokers, females, 100*fema
 
 
     
-![png](README.ipynb_files/README.ipynb_27_1.png)
+![png](output_27_1.png)
     
 
 
@@ -475,13 +475,13 @@ sns.catplot(x="sex", y="charges", kind="box", data=data)
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x2c1e6f6a1c0>
+    <seaborn.axisgrid.FacetGrid at 0x2902461eac0>
 
 
 
 
     
-![png](README.ipynb_files/README.ipynb_29_1.png)
+![png](output_29_1.png)
     
 
 
@@ -515,7 +515,7 @@ plt.ylabel("charges")
 
 
     
-![png](README.ipynb_files/README.ipynb_32_2.png)
+![png](output_32_2.png)
     
 
 
@@ -561,7 +561,7 @@ plt.show()
 
 
     
-![png](README.ipynb_files/README.ipynb_33_0.png)
+![png](output_33_0.png)
     
 
 
@@ -727,13 +727,13 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x2c1e7451550>
+    <matplotlib.legend.Legend at 0x290264fb5e0>
 
 
 
 
     
-![png](README.ipynb_files/README.ipynb_37_1.png)
+![png](output_37_1.png)
     
 
 
@@ -1026,7 +1026,7 @@ sns.heatmap(corr, cmap="Blues", robust=True, annot = True)
 
 
     
-![png](README.ipynb_files/README.ipynb_45_1.png)
+![png](output_45_1.png)
     
 
 
@@ -1253,7 +1253,7 @@ plt.show()
 
 
     
-![png](README.ipynb_files/README.ipynb_57_0.png)
+![png](output_57_0.png)
     
 
 
@@ -1370,7 +1370,7 @@ for c in range(0, X_train.columns.shape[0]):
     FEATURE IMPORTANCES:
     
     age: 	0.08
-    bmi: 	0.24
+    bmi: 	0.25
     children: 	0.03
     sex_male: 	0.01
     smoker_yes: 	0.64
@@ -1601,27 +1601,10 @@ print("\nGrid search scores: ", np.sqrt(np.abs(selector.grid_scores_)))
     
     Ranking of the variables:  [1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
     
-    Grid search scores:  [[7138.67103019 7739.77368905 6337.92465015 7398.72070492 7042.69153942]
-     [5936.81142318 6626.86076858 5266.74730253 6130.49498527 5693.17489792]
-     [4150.28219027 5719.44228157 3781.62420373 4803.27007947 4597.38172403]
-     [4148.36253166 5722.6880076  3781.47001082 4799.86168777 4604.95971821]
-     [4156.43019153 5701.56961518 3782.72792572 4784.05858971 4617.58071579]
-     [4144.50580069 5679.75298713 3776.20510701 4753.31605139 4644.70770821]
-     [4124.60263887 5676.1042636  3794.78100912 4742.52466822 4640.62079901]
-     [4121.95560945 5650.08523587 3791.55999314 4751.39725541 4666.42074818]
-     [4128.41951805 5659.07821672 3791.29016312 4757.41959744 4682.59828349]
-     [4140.15675865 5656.54015738 3791.57669633 4757.68220131 4683.01562734]
-     [4150.98029378 5656.78347693 3739.6946527  4757.24369007 4681.07258915]
-     [4146.88265727 5656.88809737 3739.60791478 4757.24922355 4608.92042897]
-     [4146.60687995 5656.79070238 3722.51532363 4684.23234727 4611.38406745]
-     [4146.81972293 5660.03104114 3727.91347861 4684.04785506 4612.0499913 ]
-     [4146.69251666 5661.07710205 3728.15838223 4690.27757142 4612.11687324]
-     [4144.35751635 5660.79345423 3728.08188747 4690.14497819 4611.80003467]
-     [4145.24983333 5654.90468923 3713.60943913 4690.07686246 4605.39133569]]
-    
-
-    C:\Users\adria\anaconda3\lib\site-packages\sklearn\utils\deprecation.py:103: FutureWarning: The `grid_scores_` attribute is deprecated in version 1.0 in favor of `cv_results_` and will be removed in version 1.2.
-      warnings.warn(msg, category=FutureWarning)
+    Grid search scores:  [7146.6716994  5948.02235792 4657.14217224 4658.36691121 4654.07578001
+     4644.6435927  4640.21057875 4639.85273211 4647.63731355 4649.29185311
+     4642.39078302 4627.20766275 4609.93808424 4611.73966169 4613.29260844
+     4612.70063608 4607.78447026]
     
 
 
@@ -1637,7 +1620,7 @@ plt.show()
 
 
     
-![png](README.ipynb_files/README.ipynb_78_0.png)
+![png](output_78_0.png)
     
 
 
@@ -1758,13 +1741,13 @@ plt.show()
 
 
     
-![png](README.ipynb_files/README.ipynb_82_0.png)
+![png](output_82_0.png)
     
 
 
 
     
-![png](README.ipynb_files/README.ipynb_82_1.png)
+![png](output_82_1.png)
     
 
 
@@ -1905,7 +1888,7 @@ training_results["clustered_ridge"] = np.sqrt(np.abs(clusteredRidge.best_score_)
 # print(np.mean(all_scores))
 ```
 
-    Best CV Score (RMSE): 2691.955927908613
+    Best CV Score (RMSE): 2692.8325247947973
     Tuned Model Parameters: [{'alpha': 0.0}, {'alpha': 2.1544346900318843}, {'alpha': 0.001}]
     
 
@@ -2051,10 +2034,10 @@ statsmod.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   1147.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Wed, 08 Feb 2023</td> <th>  Prob (F-statistic):</th>  <td>  0.00</td>  
+  <th>Date:</th>             <td>Tue, 06 Jul 2021</td> <th>  Prob (F-statistic):</th>  <td>  0.00</td>  
 </tr>
 <tr>
-  <th>Time:</th>                 <td>18:40:21</td>     <th>  Log-Likelihood:    </th> <td> -9213.5</td> 
+  <th>Time:</th>                 <td>11:15:29</td>     <th>  Log-Likelihood:    </th> <td> -9213.5</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   936</td>      <th>  AIC:               </th> <td>1.844e+04</td>
@@ -2204,23 +2187,23 @@ for c in range(0, X_train.columns.shape[0]):
 # print(np.mean(all_scores))
 ```
 
-    Best CV Score (RMSE): 4708.3298989524565
+    Best CV Score (RMSE): 4709.433757249967
     Tuned Model Parameters: {'max_depth': 5, 'max_features': 'log2', 'n_estimators': 300}
     
     FEATURE IMPORTANCES:
     
-    age: 	0.04
-    bmi: 	0.02
-    smoker_yes: 	0.11
-    smoker*bmi: 	0.24
+    age: 	0.03
+    bmi: 	0.03
+    smoker_yes: 	0.12
+    smoker*bmi: 	0.22
     age_cluster_0: 	0.11
-    age_cluster_2: 	0.18
+    age_cluster_2: 	0.19
     bmi*age0: 	0.01
-    bmi*age1: 	0.02
-    bmi*age2: 	0.10
-    age0: 	0.05
+    bmi*age1: 	0.01
+    bmi*age2: 	0.11
+    age0: 	0.06
     age2: 	0.04
-    age0*smoker_no: 	0.05
+    age0*smoker_no: 	0.04
     age2*smoker_yes: 	0.04
     
 
@@ -2302,7 +2285,7 @@ for c in range(0, X_train.columns.shape[0]):
 # print(np.mean(all_scores))
 ```
 
-    Best CV Score (RMSE): 4593.143508897625
+    Best CV Score (RMSE): 4593.161918113908
     Tuned Model Parameters: {'learning_rate': 0.05, 'n_estimators': 100, 'subsample': 1}
     
     FEATURE IMPORTANCES:
@@ -2376,13 +2359,13 @@ results = cross_val_score(neural_net, X_train, y_train, cv=kfold)
 neural_net.fit(X_train, y_train)
 ```
 
-    WARNING:tensorflow:5 out of the last 9 calls to <function Model.make_test_function.<locals>.test_function at 0x000002C1B307B5E0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+    WARNING:tensorflow:5 out of the last 9 calls to <function Model.make_test_function.<locals>.test_function at 0x00000290383FD9D0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
     
 
 
 
 
-    <keras.callbacks.History at 0x2c1b2ef1490>
+    <keras.callbacks.History at 0x2903d35ae80>
 
 
 
@@ -2393,7 +2376,7 @@ print(((nn_y_max - nn_y_min) * np.sqrt(np.abs(results.mean()))).item())
 ```
 
     Baseline: 0.07 (0.04) RMSE
-    4683.963958674994
+    4679.925092742673
     
 
 
@@ -2428,7 +2411,7 @@ single_training_results["ridge_single"] = np.sqrt(np.abs(ridge_reg.best_score_))
 print(single_training_results["ridge_single"])
 ```
 
-    4938.270961588569
+    4938.270961588562
     
 
 
@@ -2509,19 +2492,19 @@ for c in range(0, X_train.columns.shape[0]):
 # print(np.mean(all_scores))
 ```
 
-    Best CV Score (RMSE): 4741.850563115253
+    Best CV Score (RMSE): 4757.71231779205
     Tuned Model Parameters: {'max_depth': 10, 'max_features': 'log2', 'n_estimators': 800}
     
     FEATURE IMPORTANCES:
     
-    age: 	0.12
+    age: 	0.13
     bmi: 	0.09
     children: 	0.02
     sex_male: 	0.01
     smoker_yes: 	0.30
     region_northeast: 	0.01
     region_southeast: 	0.01
-    smoker*bmi: 	0.46
+    smoker*bmi: 	0.45
     
 
 
@@ -2677,13 +2660,13 @@ results = cross_val_score(neural_net_pure, X_train, y_train, cv=kfold)
 neural_net_pure.fit(X_train, y_train)
 ```
 
-    WARNING:tensorflow:6 out of the last 11 calls to <function Model.make_test_function.<locals>.test_function at 0x000002C1BA36D9D0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+    WARNING:tensorflow:6 out of the last 11 calls to <function Model.make_test_function.<locals>.test_function at 0x0000029038795F70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
     
 
 
 
 
-    <keras.callbacks.History at 0x2c1b2ac4a60>
+    <keras.callbacks.History at 0x2903bed1c70>
 
 
 
@@ -2696,7 +2679,7 @@ print("cross-validated RMSE:", single_training_results["neural_net_single"])
 ```
 
     Baseline: 0.08 (0.04) RMSE
-    cross-validated RMSE: 4840.898275255908
+    cross-validated RMSE: 4825.5646267217235
     
 
 ## 6. Prediction on the Test Data Set
@@ -2836,7 +2819,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_1.png)
+![png](output_146_1.png)
     
 
 
@@ -2847,7 +2830,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_3.png)
+![png](output_146_3.png)
     
 
 
@@ -2858,7 +2841,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_5.png)
+![png](output_146_5.png)
     
 
 
@@ -2869,7 +2852,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_7.png)
+![png](output_146_7.png)
     
 
 
@@ -2880,7 +2863,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_9.png)
+![png](output_146_9.png)
     
 
 
@@ -2891,7 +2874,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_11.png)
+![png](output_146_11.png)
     
 
 
@@ -2902,7 +2885,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_13.png)
+![png](output_146_13.png)
     
 
 
@@ -2913,7 +2896,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_15.png)
+![png](output_146_15.png)
     
 
 
@@ -2935,7 +2918,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_17.png)
+![png](output_146_17.png)
     
 
 
@@ -2946,7 +2929,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_19.png)
+![png](output_146_19.png)
     
 
 
@@ -2957,7 +2940,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_21.png)
+![png](output_146_21.png)
     
 
 
@@ -2968,7 +2951,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_23.png)
+![png](output_146_23.png)
     
 
 
@@ -2979,7 +2962,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_25.png)
+![png](output_146_25.png)
     
 
 
@@ -2990,7 +2973,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_27.png)
+![png](output_146_27.png)
     
 
 
@@ -3001,7 +2984,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_29.png)
+![png](output_146_29.png)
     
 
 
@@ -3012,7 +2995,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_31.png)
+![png](output_146_31.png)
     
 
 
@@ -3034,7 +3017,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_33.png)
+![png](output_146_33.png)
     
 
 
@@ -3045,7 +3028,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_35.png)
+![png](output_146_35.png)
     
 
 
@@ -3056,7 +3039,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_37.png)
+![png](output_146_37.png)
     
 
 
@@ -3067,7 +3050,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_39.png)
+![png](output_146_39.png)
     
 
 
@@ -3078,7 +3061,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_41.png)
+![png](output_146_41.png)
     
 
 
@@ -3089,7 +3072,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_43.png)
+![png](output_146_43.png)
     
 
 
@@ -3100,7 +3083,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_45.png)
+![png](output_146_45.png)
     
 
 
@@ -3111,7 +3094,7 @@ for cm in classification_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_146_47.png)
+![png](output_146_47.png)
     
 
 
@@ -3137,118 +3120,118 @@ for cm in prediction_results:
     svm->class_score:
     	 accuracy 0.9079601990049752
     svm->ridge_x_terms:
-    {'rmse': 4559.966170530843, 'mae': 2411.5121821100297, 'r2': 0.8527601130760974}
-    	 rmse 4559.966170530843
-    	 mae 2411.5121821100297
+    {'rmse': 4559.966170530842, 'mae': 2411.5121821100283, 'r2': 0.8527601130760974}
+    	 rmse 4559.966170530842
+    	 mae 2411.5121821100283
     	 r2 0.8527601130760974
     svm->clustered_ridge:
-    {'rmse': 4568.484334057749, 'mae': 2508.2148892272617, 'r2': 0.8522095015833457}
-    	 rmse 4568.484334057749
-    	 mae 2508.2148892272617
-    	 r2 0.8522095015833457
+    {'rmse': 4568.475395714078, 'mae': 2509.841754898903, 'r2': 0.8522100798937338}
+    	 rmse 4568.475395714078
+    	 mae 2509.841754898903
+    	 r2 0.8522100798937338
     svm->lasso:
-    {'rmse': 4562.8115936998465, 'mae': 2505.3459228306065, 'r2': 0.8525763000890569}
+    {'rmse': 4562.8115936998465, 'mae': 2505.3459228306056, 'r2': 0.8525763000890569}
     	 rmse 4562.8115936998465
-    	 mae 2505.3459228306065
+    	 mae 2505.3459228306056
     	 r2 0.8525763000890569
     svm->ols_regression:
-    {'rmse': 4560.5509421512925, 'mae': 2411.4006426455785, 'r2': 0.8527223464677905}
-    	 rmse 4560.5509421512925
-    	 mae 2411.4006426455785
-    	 r2 0.8527223464677905
+    {'rmse': 4560.550942151294, 'mae': 2411.4006426455826, 'r2': 0.8527223464677904}
+    	 rmse 4560.550942151294
+    	 mae 2411.4006426455826
+    	 r2 0.8527223464677904
     svm->random_forest_reg:
-    {'rmse': 4504.934029926709, 'mae': 2573.175748986721, 'r2': 0.8562926089800323}
-    	 rmse 4504.934029926709
-    	 mae 2573.175748986721
-    	 r2 0.8562926089800323
+    {'rmse': 4535.705934914501, 'mae': 2602.7569740292233, 'r2': 0.8543226563151387}
+    	 rmse 4535.705934914501
+    	 mae 2602.7569740292233
+    	 r2 0.8543226563151387
     svm->gradient_boosting_reg:
-    {'rmse': 4427.866820219522, 'mae': 2420.3109205305154, 'r2': 0.8611674394929774}
-    	 rmse 4427.866820219522
-    	 mae 2420.3109205305154
-    	 r2 0.8611674394929774
+    {'rmse': 4425.646475152544, 'mae': 2419.2014239996074, 'r2': 0.8613066392097446}
+    	 rmse 4425.646475152544
+    	 mae 2419.2014239996074
+    	 r2 0.8613066392097446
     svm->neural_net:
-    {'rmse': 4510.591830363242, 'mae': 2566.1925365405395, 'r2': 0.855931414651777}
-    	 rmse 4510.591830363242
-    	 mae 2566.1925365405395
-    	 r2 0.855931414651777
+    {'rmse': 4495.033978851823, 'mae': 2454.787011236396, 'r2': 0.8569235381905}
+    	 rmse 4495.033978851823
+    	 mae 2454.787011236396
+    	 r2 0.8569235381905
     
     
     rand_forest_class->class_score:
     	 accuracy 0.9154228855721394
     rand_forest_class->ridge_x_terms:
-    {'rmse': 4379.625555603834, 'mae': 2307.862224174572, 'r2': 0.8641761000582435}
-    	 rmse 4379.625555603834
-    	 mae 2307.862224174572
+    {'rmse': 4379.625555603835, 'mae': 2307.862224174571, 'r2': 0.8641761000582435}
+    	 rmse 4379.625555603835
+    	 mae 2307.862224174571
     	 r2 0.8641761000582435
     rand_forest_class->clustered_ridge:
-    {'rmse': 4424.333728044337, 'mae': 2418.757960126792, 'r2': 0.8613889061989333}
-    	 rmse 4424.333728044337
-    	 mae 2418.757960126792
-    	 r2 0.8613889061989333
+    {'rmse': 4424.324498477087, 'mae': 2420.3848257984337, 'r2': 0.8613894845093212}
+    	 rmse 4424.324498477087
+    	 mae 2420.3848257984337
+    	 r2 0.8613894845093212
     rand_forest_class->lasso:
-    {'rmse': 4418.478182278509, 'mae': 2414.7974719208514, 'r2': 0.8617555632160584}
-    	 rmse 4418.478182278509
-    	 mae 2414.7974719208514
+    {'rmse': 4418.47818227851, 'mae': 2414.79747192085, 'r2': 0.8617555632160584}
+    	 rmse 4418.47818227851
+    	 mae 2414.79747192085
     	 r2 0.8617555632160584
     rand_forest_class->ols_regression:
-    {'rmse': 4379.557830599713, 'mae': 2307.3304071678235, 'r2': 0.8641803006927242}
+    {'rmse': 4379.557830599713, 'mae': 2307.3304071678267, 'r2': 0.8641803006927242}
     	 rmse 4379.557830599713
-    	 mae 2307.3304071678235
+    	 mae 2307.3304071678267
     	 r2 0.8641803006927242
     rand_forest_class->random_forest_reg:
-    {'rmse': 4503.2672648238295, 'mae': 2574.8043909153985, 'r2': 0.8563989289181264}
-    	 rmse 4503.2672648238295
-    	 mae 2574.8043909153985
-    	 r2 0.8563989289181264
+    {'rmse': 4537.683078932314, 'mae': 2608.486746598056, 'r2': 0.8541956252118241}
+    	 rmse 4537.683078932314
+    	 mae 2608.486746598056
+    	 r2 0.8541956252118241
     rand_forest_class->gradient_boosting_reg:
-    {'rmse': 4427.866820219522, 'mae': 2420.3109205305154, 'r2': 0.8611674394929774}
-    	 rmse 4427.866820219522
-    	 mae 2420.3109205305154
-    	 r2 0.8611674394929774
+    {'rmse': 4425.646475152544, 'mae': 2419.2014239996074, 'r2': 0.8613066392097446}
+    	 rmse 4425.646475152544
+    	 mae 2419.2014239996074
+    	 r2 0.8613066392097446
     rand_forest_class->neural_net:
-    {'rmse': 4410.31154738131, 'mae': 2492.115268560129, 'r2': 0.8622661229347386}
-    	 rmse 4410.31154738131
-    	 mae 2492.115268560129
-    	 r2 0.8622661229347386
+    {'rmse': 4406.540267528296, 'mae': 2386.8802044266945, 'r2': 0.8625015761017888}
+    	 rmse 4406.540267528296
+    	 mae 2386.8802044266945
+    	 r2 0.8625015761017888
     
     
     grad_boost_class->class_score:
     	 accuracy 0.9154228855721394
     grad_boost_class->ridge_x_terms:
-    {'rmse': 4379.625555603834, 'mae': 2307.862224174572, 'r2': 0.8641761000582435}
-    	 rmse 4379.625555603834
-    	 mae 2307.862224174572
+    {'rmse': 4379.625555603835, 'mae': 2307.862224174571, 'r2': 0.8641761000582435}
+    	 rmse 4379.625555603835
+    	 mae 2307.862224174571
     	 r2 0.8641761000582435
     grad_boost_class->clustered_ridge:
-    {'rmse': 4424.333728044337, 'mae': 2418.757960126792, 'r2': 0.8613889061989333}
-    	 rmse 4424.333728044337
-    	 mae 2418.757960126792
-    	 r2 0.8613889061989333
+    {'rmse': 4424.324498477087, 'mae': 2420.3848257984337, 'r2': 0.8613894845093212}
+    	 rmse 4424.324498477087
+    	 mae 2420.3848257984337
+    	 r2 0.8613894845093212
     grad_boost_class->lasso:
-    {'rmse': 4418.478182278509, 'mae': 2414.7974719208514, 'r2': 0.8617555632160584}
-    	 rmse 4418.478182278509
-    	 mae 2414.7974719208514
+    {'rmse': 4418.47818227851, 'mae': 2414.79747192085, 'r2': 0.8617555632160584}
+    	 rmse 4418.47818227851
+    	 mae 2414.79747192085
     	 r2 0.8617555632160584
     grad_boost_class->ols_regression:
-    {'rmse': 4379.557830599713, 'mae': 2307.3304071678235, 'r2': 0.8641803006927242}
+    {'rmse': 4379.557830599713, 'mae': 2307.3304071678267, 'r2': 0.8641803006927242}
     	 rmse 4379.557830599713
-    	 mae 2307.3304071678235
+    	 mae 2307.3304071678267
     	 r2 0.8641803006927242
     grad_boost_class->random_forest_reg:
-    {'rmse': 4503.2672648238295, 'mae': 2574.8043909153985, 'r2': 0.8563989289181264}
-    	 rmse 4503.2672648238295
-    	 mae 2574.8043909153985
-    	 r2 0.8563989289181264
+    {'rmse': 4537.683078932314, 'mae': 2608.486746598056, 'r2': 0.8541956252118241}
+    	 rmse 4537.683078932314
+    	 mae 2608.486746598056
+    	 r2 0.8541956252118241
     grad_boost_class->gradient_boosting_reg:
-    {'rmse': 4427.866820219522, 'mae': 2420.3109205305154, 'r2': 0.8611674394929774}
-    	 rmse 4427.866820219522
-    	 mae 2420.3109205305154
-    	 r2 0.8611674394929774
+    {'rmse': 4425.646475152544, 'mae': 2419.2014239996074, 'r2': 0.8613066392097446}
+    	 rmse 4425.646475152544
+    	 mae 2419.2014239996074
+    	 r2 0.8613066392097446
     grad_boost_class->neural_net:
-    {'rmse': 4410.31154738131, 'mae': 2492.115268560129, 'r2': 0.8622661229347386}
-    	 rmse 4410.31154738131
-    	 mae 2492.115268560129
-    	 r2 0.8622661229347386
+    {'rmse': 4406.540267528296, 'mae': 2386.8802044266945, 'r2': 0.8625015761017888}
+    	 rmse 4406.540267528296
+    	 mae 2386.8802044266945
+    	 r2 0.8625015761017888
     
     
     
@@ -3351,20 +3334,20 @@ plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, h
 ```
 
 
-<h3>Performance of the Sequential Models (Classification + Regression)</h3><h4>Root Mean Squared Error of Prediction (Training RMSE)</h4><table><tr><th>class/reg</th><th>class. accuracy</th><th><u>ridge_x_terms</u></th><th><u>clustered_ridge</u></th><th><u>lasso</u></th><th><u>ols_regression</u></th><th><u>random_forest_reg</u></th><th><u>gradient_boosting_reg</u></th><th><u>neural_net</u></th></tr><tr><th><u>svm</u></th><td>0.91</td><td>4559.97 (4597.85)</td><td>4568.48 (2691.96)</td><td>4562.81 (4659.32)</td><td>4560.55 (4557.65)</td><td>4504.93 (4708.33)</td><td>4427.87 (4593.14)</td><td>4510.59 (4683.96)</td></tr><tr><th><u>rand_forest_class</u></th><td>0.92</td><td>4379.63 (4597.85)</td><td>4424.33 (2691.96)</td><td>4418.48 (4659.32)</td><td>4379.56 (4557.65)</td><td>4503.27 (4708.33)</td><td>4427.87 (4593.14)</td><td>4410.31 (4683.96)</td></tr><tr><th><u>grad_boost_class</u></th><td>0.92</td><td>4379.63 (4597.85)</td><td>4424.33 (2691.96)</td><td>4418.48 (4659.32)</td><td>4379.56 (4557.65)</td><td>4503.27 (4708.33)</td><td>4427.87 (4593.14)</td><td>4410.31 (4683.96)</td></tr></table>
+<h3>Performance of the Sequential Models (Classification + Regression)</h3><h4>Root Mean Squared Error of Prediction (Training RMSE)</h4><table><tr><th>class/reg</th><th>class. accuracy</th><th><u>ridge_x_terms</u></th><th><u>clustered_ridge</u></th><th><u>lasso</u></th><th><u>ols_regression</u></th><th><u>random_forest_reg</u></th><th><u>gradient_boosting_reg</u></th><th><u>neural_net</u></th></tr><tr><th><u>svm</u></th><td>0.91</td><td>4559.97 (4597.85)</td><td>4568.48 (2692.83)</td><td>4562.81 (4659.32)</td><td>4560.55 (4557.65)</td><td>4535.71 (4709.43)</td><td>4425.65 (4593.16)</td><td>4495.03 (4679.93)</td></tr><tr><th><u>rand_forest_class</u></th><td>0.92</td><td>4379.63 (4597.85)</td><td>4424.32 (2692.83)</td><td>4418.48 (4659.32)</td><td>4379.56 (4557.65)</td><td>4537.68 (4709.43)</td><td>4425.65 (4593.16)</td><td>4406.54 (4679.93)</td></tr><tr><th><u>grad_boost_class</u></th><td>0.92</td><td>4379.63 (4597.85)</td><td>4424.32 (2692.83)</td><td>4418.48 (4659.32)</td><td>4379.56 (4557.65)</td><td>4537.68 (4709.43)</td><td>4425.65 (4593.16)</td><td>4406.54 (4679.93)</td></tr></table>
 
 
 
-<h4>Mean Absolute Error</h4><table><tr><th>class/reg</th><th>class. accuracy</th><th><u>ridge_x_terms</u></th><th><u>clustered_ridge</u></th><th><u>lasso</u></th><th><u>ols_regression</u></th><th><u>random_forest_reg</u></th><th><u>gradient_boosting_reg</u></th><th><u>neural_net</u></th></tr><tr><th><u>svm</u></th><td>0.91</td><td>2411.51</td><td>2508.21</td><td>2505.35</td><td>2411.40</td><td>2573.18</td><td>2420.31</td><td>2566.19</td></tr><tr><th><u>rand_forest_class</u></th><td>0.92</td><td>2307.86</td><td>2418.76</td><td>2414.80</td><td>2307.33</td><td>2574.80</td><td>2420.31</td><td>2492.12</td></tr><tr><th><u>grad_boost_class</u></th><td>0.92</td><td>2307.86</td><td>2418.76</td><td>2414.80</td><td>2307.33</td><td>2574.80</td><td>2420.31</td><td>2492.12</td></tr></table>
+<h4>Mean Absolute Error</h4><table><tr><th>class/reg</th><th>class. accuracy</th><th><u>ridge_x_terms</u></th><th><u>clustered_ridge</u></th><th><u>lasso</u></th><th><u>ols_regression</u></th><th><u>random_forest_reg</u></th><th><u>gradient_boosting_reg</u></th><th><u>neural_net</u></th></tr><tr><th><u>svm</u></th><td>0.91</td><td>2411.51</td><td>2509.84</td><td>2505.35</td><td>2411.40</td><td>2602.76</td><td>2419.20</td><td>2454.79</td></tr><tr><th><u>rand_forest_class</u></th><td>0.92</td><td>2307.86</td><td>2420.38</td><td>2414.80</td><td>2307.33</td><td>2608.49</td><td>2419.20</td><td>2386.88</td></tr><tr><th><u>grad_boost_class</u></th><td>0.92</td><td>2307.86</td><td>2420.38</td><td>2414.80</td><td>2307.33</td><td>2608.49</td><td>2419.20</td><td>2386.88</td></tr></table>
 
 
 
-<h4>R-Squared Adjusted (out-of-sample)</h4><table><tr><th>class/reg</th><th>class. accuracy</th><th><u>ridge_x_terms</u></th><th><u>clustered_ridge</u></th><th><u>lasso</u></th><th><u>ols_regression</u></th><th><u>random_forest_reg</u></th><th><u>gradient_boosting_reg</u></th><th><u>neural_net</u></th></tr><tr><th><u>svm</u></th><td>0.91</td><td>0.8528</td><td>0.8522</td><td>0.8526</td><td>0.8527</td><td>0.8563</td><td>0.8612</td><td>0.8559</td></tr><tr><th><u>rand_forest_class</u></th><td>0.92</td><td>0.8642</td><td>0.8614</td><td>0.8618</td><td>0.8642</td><td>0.8564</td><td>0.8612</td><td>0.8623</td></tr><tr><th><u>grad_boost_class</u></th><td>0.92</td><td>0.8642</td><td>0.8614</td><td>0.8618</td><td>0.8642</td><td>0.8564</td><td>0.8612</td><td>0.8623</td></tr></table>
+<h4>R-Squared Adjusted (out-of-sample)</h4><table><tr><th>class/reg</th><th>class. accuracy</th><th><u>ridge_x_terms</u></th><th><u>clustered_ridge</u></th><th><u>lasso</u></th><th><u>ols_regression</u></th><th><u>random_forest_reg</u></th><th><u>gradient_boosting_reg</u></th><th><u>neural_net</u></th></tr><tr><th><u>svm</u></th><td>0.91</td><td>0.8528</td><td>0.8522</td><td>0.8526</td><td>0.8527</td><td>0.8543</td><td>0.8613</td><td>0.8569</td></tr><tr><th><u>rand_forest_class</u></th><td>0.92</td><td>0.8642</td><td>0.8614</td><td>0.8618</td><td>0.8642</td><td>0.8542</td><td>0.8613</td><td>0.8625</td></tr><tr><th><u>grad_boost_class</u></th><td>0.92</td><td>0.8642</td><td>0.8614</td><td>0.8618</td><td>0.8642</td><td>0.8542</td><td>0.8613</td><td>0.8625</td></tr></table>
 
 
 
     
-![png](README.ipynb_files/README.ipynb_148_3.png)
+![png](output_148_3.png)
     
 
 
@@ -3432,7 +3415,7 @@ for rm in single_regression_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_150_1.png)
+![png](output_150_1.png)
     
 
 
@@ -3443,7 +3426,7 @@ for rm in single_regression_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_150_3.png)
+![png](output_150_3.png)
     
 
 
@@ -3454,7 +3437,7 @@ for rm in single_regression_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_150_5.png)
+![png](output_150_5.png)
     
 
 
@@ -3465,7 +3448,7 @@ for rm in single_regression_models:
 
 
     
-![png](README.ipynb_files/README.ipynb_150_7.png)
+![png](output_150_7.png)
     
 
 
@@ -3546,11 +3529,11 @@ plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, h
 ```
 
 
-<h3>Performance of the Single Models (Only Regression)</h3><h4>Root Mean Squared Error of Prediction (Training RMSE)</h4><table><th><u>ridge_single</u></th><th><u>rand_forest_reg_single</u></th><th><u>grad_boost_reg_single</u></th><th><u>neural_net_single</u></th></tr><tr><td>4775.81 (4938.27)</td><td>4619.40 (4741.85)</td><td>4433.55 (4603.21)</td><td>4623.58 (4840.90)</td></tr></table>
+<h3>Performance of the Single Models (Only Regression)</h3><h4>Root Mean Squared Error of Prediction (Training RMSE)</h4><table><th><u>ridge_single</u></th><th><u>rand_forest_reg_single</u></th><th><u>grad_boost_reg_single</u></th><th><u>neural_net_single</u></th></tr><tr><td>4775.81 (4938.27)</td><td>4615.38 (4757.71)</td><td>4433.55 (4603.21)</td><td>4565.68 (4825.56)</td></tr></table>
 
 
 
-<h4>Mean Absolute Error</h4><table><th><u>ridge_single</u></th><th><u>rand_forest_reg_single</u></th><th><u>grad_boost_reg_single</u></th><th><u>neural_net_single</u></th></tr><tr><td>2820.95</td><td>2546.88</td><td>2438.08</td><td>2685.27</td></tr></table>
+<h4>Mean Absolute Error</h4><table><th><u>ridge_single</u></th><th><u>rand_forest_reg_single</u></th><th><u>grad_boost_reg_single</u></th><th><u>neural_net_single</u></th></tr><tr><td>2820.95</td><td>2538.67</td><td>2438.08</td><td>2671.42</td></tr></table>
 
 
 
@@ -3559,7 +3542,7 @@ plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, h
 
 
     
-![png](README.ipynb_files/README.ipynb_151_3.png)
+![png](output_151_3.png)
     
 
 
