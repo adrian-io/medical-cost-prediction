@@ -224,7 +224,7 @@ g.add_legend()
 
 
     
-![png](output_8_1.png)
+![png](doc_img/output_8_1.png)
     
 
 
@@ -246,7 +246,7 @@ sns.heatmap(corr, cmap="Blues", robust=True, annot = True)
 
 
     
-![png](output_10_1.png)
+![png](doc_img/output_10_1.png)
     
 
 
@@ -281,7 +281,7 @@ sns.boxplot(y=data["charges"], ax=ax[1])
 
 
     
-![png](output_13_1.png)
+![png](doc_img/output_13_1.png)
     
 
 
@@ -302,7 +302,7 @@ sns.catplot(x="children", y="charges", kind="box", data=data)
 
 
     
-![png](output_15_1.png)
+![png](doc_img/output_15_1.png)
     
 
 
@@ -326,7 +326,7 @@ plt.legend()
 
 
     
-![png](output_17_1.png)
+![png](doc_img/output_17_1.png)
     
 
 
@@ -358,7 +358,7 @@ sns.scatterplot(x="age", y="charges", hue="smoker",  data=data, palette=["C3", "
 
 
     
-![png](output_19_1.png)
+![png](doc_img/output_19_1.png)
     
 
 
@@ -385,7 +385,7 @@ sns.catplot(x="smoker", y="charges", kind="box", hue="sex",  data=data, palette=
 
 
     
-![png](output_22_1.png)
+![png](doc_img/output_22_1.png)
     
 
 
@@ -406,7 +406,7 @@ sns.catplot(x="region", y="charges", kind="box", hue="smoker", data=data, palett
 
 
     
-![png](output_24_1.png)
+![png](doc_img/output_24_1.png)
     
 
 
@@ -437,7 +437,7 @@ print("{} of {} ({:.2f}%) women smoke.".format(female_smokers, females, 100*fema
 
 
     
-![png](output_27_1.png)
+![png](doc_img/output_27_1.png)
     
 
 
@@ -457,7 +457,7 @@ sns.catplot(x="sex", y="charges", kind="box", data=data)
 
 
     
-![png](output_29_1.png)
+![png](doc_img/output_29_1.png)
     
 
 
@@ -491,7 +491,7 @@ plt.ylabel("charges")
 
 
     
-![png](output_32_2.png)
+![png](doc_img/output_32_2.png)
     
 
 
@@ -537,7 +537,7 @@ plt.show()
 
 
     
-![png](output_33_0.png)
+![png](doc_img/output_33_0.png)
     
 
 
@@ -696,7 +696,7 @@ plt.legend()
 
 
     
-![png](output_37_1.png)
+![png](doc_img/output_37_1.png)
     
 
 
@@ -976,7 +976,7 @@ sns.heatmap(corr, cmap="Blues", robust=True, annot = True)
 
 
     
-![png](output_45_1.png)
+![png](doc_img/output_45_1.png)
     
 
 
@@ -1203,7 +1203,7 @@ plt.show()
 
 
     
-![png](output_57_0.png)
+![png](doc_img/output_57_0.png)
     
 
 
@@ -1587,7 +1587,7 @@ plt.show()
 
 
     
-![png](output_78_0.png)
+![png](doc_img/output_78_0.png)
     
 
 
@@ -1708,13 +1708,13 @@ plt.show()
 
 
     
-![png](output_82_0.png)
+![png](doc_img/output_82_0.png)
     
 
 
 
     
-![png](output_82_1.png)
+![png](doc_img/output_82_1.png)
     
 
 
@@ -2780,7 +2780,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_1.png)
+![png](doc_img/output_146_1.png)
     
 
 
@@ -2791,7 +2791,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_3.png)
+![png](doc_img/output_146_3.png)
     
 
 
@@ -2802,7 +2802,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_5.png)
+![png](doc_img/output_146_5.png)
     
 
 
@@ -2813,7 +2813,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_7.png)
+![png](doc_img/output_146_7.png)
     
 
 
@@ -2824,7 +2824,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_9.png)
+![png](doc_img/output_146_9.png)
     
 
 
@@ -2835,7 +2835,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_11.png)
+![png](doc_img/output_146_11.png)
     
 
 
@@ -2846,7 +2846,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_13.png)
+![png](doc_img/output_146_13.png)
     
 
 
@@ -2857,7 +2857,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_15.png)
+![png](doc_img/output_146_15.png)
     
 
 
@@ -2879,7 +2879,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_17.png)
+![png](doc_img/output_146_17.png)
     
 
 
@@ -2890,7 +2890,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_19.png)
+![png](doc_img/output_146_19.png)
     
 
 
@@ -2901,7 +2901,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_21.png)
+![png](doc_img/output_146_21.png)
     
 
 
@@ -2912,7 +2912,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_23.png)
+![png](doc_img/output_146_23.png)
     
 
 
@@ -2923,7 +2923,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_25.png)
+![png](doc_img/output_146_25.png)
     
 
 
@@ -2934,7 +2934,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_27.png)
+![png](doc_img/output_146_27.png)
     
 
 
@@ -2945,7 +2945,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_29.png)
+![png](doc_img/output_146_29.png)
     
 
 
@@ -2956,7 +2956,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_31.png)
+![png](doc_img/output_146_31.png)
     
 
 
@@ -2978,7 +2978,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_33.png)
+![png](doc_img/output_146_33.png)
     
 
 
@@ -2989,7 +2989,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_35.png)
+![png](doc_img/output_146_35.png)
     
 
 
@@ -3000,7 +3000,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_37.png)
+![png](doc_img/output_146_37.png)
     
 
 
@@ -3011,7 +3011,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_39.png)
+![png](doc_img/output_146_39.png)
     
 
 
@@ -3022,7 +3022,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_41.png)
+![png](doc_img/output_146_41.png)
     
 
 
@@ -3033,7 +3033,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_43.png)
+![png](doc_img/output_146_43.png)
     
 
 
@@ -3044,7 +3044,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_45.png)
+![png](doc_img/output_146_45.png)
     
 
 
@@ -3055,7 +3055,7 @@ for cm in classification_models:
 
 
     
-![png](output_146_47.png)
+![png](doc_img/output_146_47.png)
     
 
 
@@ -3308,7 +3308,7 @@ plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, h
 
 
     
-![png](output_148_3.png)
+![png](doc_img/output_148_3.png)
     
 
 
@@ -3376,7 +3376,7 @@ for rm in single_regression_models:
 
 
     
-![png](output_150_1.png)
+![png](doc_img/output_150_1.png)
     
 
 
@@ -3387,7 +3387,7 @@ for rm in single_regression_models:
 
 
     
-![png](output_150_3.png)
+![png](doc_img/output_150_3.png)
     
 
 
@@ -3398,7 +3398,7 @@ for rm in single_regression_models:
 
 
     
-![png](output_150_5.png)
+![png](doc_img/output_150_5.png)
     
 
 
@@ -3409,7 +3409,7 @@ for rm in single_regression_models:
 
 
     
-![png](output_150_7.png)
+![png](doc_img/output_150_7.png)
     
 
 
@@ -3503,6 +3503,6 @@ plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, h
 
 
     
-![png](output_151_3.png)
+![png](doc_img/output_151_3.png)
     
 
